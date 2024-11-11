@@ -1,0 +1,249 @@
+@-webkit-keyframes animate-arrow {
+    0% {
+        stroke-dasharray: 1 226.19467px;
+        stroke-dashoffset: 0
+    }
+    to {
+        stroke-dasharray: 226.19467px, 226.19467px;
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes animate-arrow {
+    0% {
+        stroke-dasharray: 1 226.19467px;
+        stroke-dashoffset: 0
+    }
+    to {
+        stroke-dasharray: 226.19467px, 226.19467px;
+        stroke-dashoffset: 0
+    }
+}
+
+@-webkit-keyframes rotate-forward {
+    0% {
+        -webkit-transform: rotate(-200deg);
+        transform: rotate(-200deg)
+    }
+    to {
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg)
+    }
+}
+
+@keyframes rotate-forward {
+    0% {
+        -webkit-transform: rotate(-200deg);
+        transform: rotate(-200deg)
+    }
+    to {
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg)
+    }
+}
+
+@-webkit-keyframes smoothscroll {
+    0% {
+        -webkit-transform: translateX(var(--startAnimation));
+        transform: translateX(var(--startAnimation))
+    }
+    to {
+        -webkit-transform: translateX(var(--animationWidth));
+        transform: translateX(var(--animationWidth))
+    }
+}
+
+@keyframes smoothscroll {
+    0% {
+        -webkit-transform: translateX(var(--startAnimation));
+        transform: translateX(var(--startAnimation))
+    }
+    to {
+        -webkit-transform: translateX(var(--animationWidth));
+        transform: translateX(var(--animationWidth))
+    }
+}
+
+@-webkit-keyframes slidein {
+    0% {
+        top: -20%
+    }
+    to {
+        top: 140%
+    }
+}
+
+@keyframes slidein {
+    0% {
+        top: -20%
+    }
+    to {
+        top: 140%
+    }
+}
+
+@-webkit-keyframes show {
+    0% {
+        opacity: 0
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes animate {
+    0% {
+        left: 0;
+        right: 0
+    }
+    25% {
+        left: 100%;
+        right: 0
+    }
+    50% {
+        left: 0;
+        right: 100%
+    }
+    to {
+        left: 0;
+        right: 0
+    }
+}
+
+@keyframes animate {
+    0% {
+        left: 0;
+        right: 0
+    }
+    25% {
+        left: 100%;
+        right: 0
+    }
+    50% {
+        left: 0;
+        right: 100%
+    }
+    to {
+        left: 0;
+        right: 0
+    }
+}
+
+.contentTile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    width: 100%
+}
+
+.contentTile-imgContainer {
+    inset: 0;
+    position: absolute;
+    z-index: -1
+}
+
+.contentTile-imgContainer .contentTile-img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-transition: all .45s ease-out;
+    transition: all .45s ease-out;
+    width: 100%
+}
+
+.contentTile p {
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0
+}
+
+.contentTile-title {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: sortsmillgoudy, Times New Roman, serif;
+    font-size: 1.75rem;
+    letter-spacing: .375rem;
+    line-height: 2.75rem;
+    margin-bottom: 1.4375rem;
+    overflow-wrap: break-word;
+    padding: 0 .9375rem;
+    text-align: center;
+    width: 100%
+}
+
+@media screen and (min-width:64em) {
+    .contentTile-title {
+        font-size: 2rem
+    }
+}
+
+@media screen and (min-width:80em) {
+    .contentTile-title {
+        padding: 0 3.125rem
+    }
+}
+
+.contentTile-text {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: ibmplexmono, Courier New, serif;
+    font-size: .75rem;
+    font-weight: 300;
+    line-height: 1.375rem;
+    padding: 0 .9375rem;
+    text-align: center;
+    width: 100%
+}
+
+@media screen and (min-width:80em) {
+    .contentTile-text {
+        padding: 0 3.125rem
+    }
+}
+
+.contentTile-cta {
+    -webkit-backdrop-filter: blur(1.6875rem);
+    backdrop-filter: blur(1.6875rem);
+    background-color: transparent;
+    border: none;
+    font-size: .75rem;
+    font-weight: 400;
+    margin-top: 2.1875rem;
+    position: relative
+}
+
+.contentTile-cta:before {
+    content: "";
+    opacity: .2;
+    z-index: -1
+}
+
+.contentTile-cta:hover,
+.contentTile:focus-visible .contentTile-cta {
+    background-color: #000;
+    border: none;
+    color: #fff
+}
+
+.contentTile-cta:hover:before,
+.contentTile:focus-visible .contentTile-cta:before {
+    opacity: 0
+}

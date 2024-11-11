@@ -1,0 +1,322 @@
+@-webkit-keyframes animate-arrow {
+    0% {
+        stroke-dasharray: 1 226.19467px;
+        stroke-dashoffset: 0
+    }
+    to {
+        stroke-dasharray: 226.19467px, 226.19467px;
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes animate-arrow {
+    0% {
+        stroke-dasharray: 1 226.19467px;
+        stroke-dashoffset: 0
+    }
+    to {
+        stroke-dasharray: 226.19467px, 226.19467px;
+        stroke-dashoffset: 0
+    }
+}
+
+@-webkit-keyframes rotate-forward {
+    0% {
+        -webkit-transform: rotate(-200deg);
+        transform: rotate(-200deg)
+    }
+    to {
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg)
+    }
+}
+
+@keyframes rotate-forward {
+    0% {
+        -webkit-transform: rotate(-200deg);
+        transform: rotate(-200deg)
+    }
+    to {
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg)
+    }
+}
+
+@-webkit-keyframes smoothscroll {
+    0% {
+        -webkit-transform: translateX(var(--startAnimation));
+        transform: translateX(var(--startAnimation))
+    }
+    to {
+        -webkit-transform: translateX(var(--animationWidth));
+        transform: translateX(var(--animationWidth))
+    }
+}
+
+@keyframes smoothscroll {
+    0% {
+        -webkit-transform: translateX(var(--startAnimation));
+        transform: translateX(var(--startAnimation))
+    }
+    to {
+        -webkit-transform: translateX(var(--animationWidth));
+        transform: translateX(var(--animationWidth))
+    }
+}
+
+@-webkit-keyframes slidein {
+    0% {
+        top: -20%
+    }
+    to {
+        top: 140%
+    }
+}
+
+@keyframes slidein {
+    0% {
+        top: -20%
+    }
+    to {
+        top: 140%
+    }
+}
+
+@-webkit-keyframes show {
+    0% {
+        opacity: 0
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes animate {
+    0% {
+        left: 0;
+        right: 0
+    }
+    25% {
+        left: 100%;
+        right: 0
+    }
+    50% {
+        left: 0;
+        right: 100%
+    }
+    to {
+        left: 0;
+        right: 0
+    }
+}
+
+@keyframes animate {
+    0% {
+        left: 0;
+        right: 0
+    }
+    25% {
+        left: 100%;
+        right: 0
+    }
+    50% {
+        left: 0;
+        right: 100%
+    }
+    to {
+        left: 0;
+        right: 0
+    }
+}
+
+.immersivePush {
+    --highlightColor: transparent;
+    overflow: hidden;
+    padding-left: .9375rem;
+    padding-right: .9375rem
+}
+
+.immersivePush-text-headline {
+    color: #000;
+    font-family: sortsmillgoudy, Times New Roman, serif;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    line-height: 2.625rem;
+    overflow-wrap: break-word;
+    padding-top: 2.3125rem;
+    text-align: center
+}
+
+@media screen and (min-width:64em) {
+    .immersivePush-text-headline {
+        font-size: 2rem;
+        padding-top: 6.25rem
+    }
+}
+
+.immersivePush-image {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.immersivePush-left-image {
+    position: relative;
+    width: calc(8.4375rem + (var(--viewportWidthWithoutScrollbar) - 14*15px)/11*8)
+}
+
+@media screen and (min-width:48em) {
+    .immersivePush-left-image {
+        width: 100%
+    }
+}
+
+.immersivePush-leftImage {
+    width: 100%
+}
+
+.immersivePush-pushImage {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%)
+}
+
+.immersivePush-cta {
+    margin-bottom: 3.125rem;
+    margin-top: 2rem
+}
+
+.immersivePush-cta:before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.immersivePush-cta span {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    color: #000;
+    cursor: pointer;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-family: ibmplexmono, Courier New, serif;
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 400;
+    font-weight: 500;
+    letter-spacing: .01em;
+    line-height: 1.66667;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    width: auto
+}
+
+.immersivePush-cta span:after {
+    content: " >";
+    content: " >"/"";
+    margin-left: .3125rem
+}
+
+.immersivePush-cta span:before {
+    background-color: currentcolor;
+    bottom: 0;
+    content: "";
+    height: .0625rem;
+    left: 0;
+    position: absolute;
+    right: 0
+}
+
+.immersivePush-cta span:hover {
+    color: #000
+}
+
+.immersivePush-cta span:hover:before {
+    -webkit-animation: animate 1s ease-in-out normal both;
+    animation: animate 1s ease-in-out normal both
+}
+
+.immersivePush-container {
+    display: grid;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 3.375rem auto 0;
+    padding-bottom: 5.625rem;
+    padding-top: 1.875rem;
+    width: calc(9.375rem + (var(--viewportWidthWithoutScrollbar) - 14*15px)/11*9)
+}
+
+@media screen and (min-width:48em) {
+    .immersivePush-container {
+        gap: calc(3.375rem + (var(--viewportWidthWithoutScrollbar) - 14*27px)/11);
+        grid-template-columns: 1fr 1fr;
+        width: calc(16.875rem + (var(--viewportWidthWithoutScrollbar) - 14*27px)/11*9)
+    }
+}
+
+@media screen and (min-width:80em) {
+    .immersivePush-container {
+        gap: calc(8.25rem + (var(--viewportWidthWithoutScrollbar) - 14*66px)/11);
+        margin-top: 5.125rem;
+        width: calc(41.25rem + (var(--viewportWidthWithoutScrollbar) - 14*66px)/11*9)
+    }
+}
+
+.immersivePush-container-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.immersivePush-container-link {
+    position: relative
+}
+
+.immersivePush-description {
+    font-family: ibmplexmono, Courier New, serif;
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .01em;
+    line-height: 1.66667;
+    margin-top: 1.875rem;
+    text-align: center
+}
+
+.immersivePush-description s {
+    background-color: var(--highlightColor);
+    text-decoration: none
+}
+
+.immersivePush-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}

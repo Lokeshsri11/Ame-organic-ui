@@ -1,0 +1,228 @@
+@-webkit-keyframes animate-arrow {
+    0% {
+        stroke-dasharray: 1 226.19467px;
+        stroke-dashoffset: 0
+    }
+    to {
+        stroke-dasharray: 226.19467px, 226.19467px;
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes animate-arrow {
+    0% {
+        stroke-dasharray: 1 226.19467px;
+        stroke-dashoffset: 0
+    }
+    to {
+        stroke-dasharray: 226.19467px, 226.19467px;
+        stroke-dashoffset: 0
+    }
+}
+
+@-webkit-keyframes rotate-forward {
+    0% {
+        -webkit-transform: rotate(-200deg);
+        transform: rotate(-200deg)
+    }
+    to {
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg)
+    }
+}
+
+@keyframes rotate-forward {
+    0% {
+        -webkit-transform: rotate(-200deg);
+        transform: rotate(-200deg)
+    }
+    to {
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg)
+    }
+}
+
+@-webkit-keyframes smoothscroll {
+    0% {
+        -webkit-transform: translateX(var(--startAnimation));
+        transform: translateX(var(--startAnimation))
+    }
+    to {
+        -webkit-transform: translateX(var(--animationWidth));
+        transform: translateX(var(--animationWidth))
+    }
+}
+
+@keyframes smoothscroll {
+    0% {
+        -webkit-transform: translateX(var(--startAnimation));
+        transform: translateX(var(--startAnimation))
+    }
+    to {
+        -webkit-transform: translateX(var(--animationWidth));
+        transform: translateX(var(--animationWidth))
+    }
+}
+
+@-webkit-keyframes slidein {
+    0% {
+        top: -20%
+    }
+    to {
+        top: 140%
+    }
+}
+
+@keyframes slidein {
+    0% {
+        top: -20%
+    }
+    to {
+        top: 140%
+    }
+}
+
+@-webkit-keyframes show {
+    0% {
+        opacity: 0
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes animate {
+    0% {
+        left: 0;
+        right: 0
+    }
+    25% {
+        left: 100%;
+        right: 0
+    }
+    50% {
+        left: 0;
+        right: 100%
+    }
+    to {
+        left: 0;
+        right: 0
+    }
+}
+
+@keyframes animate {
+    0% {
+        left: 0;
+        right: 0
+    }
+    25% {
+        left: 100%;
+        right: 0
+    }
+    50% {
+        left: 0;
+        right: 100%
+    }
+    to {
+        left: 0;
+        right: 0
+    }
+}
+
+.c-range-carousel {
+    overflow: hidden;
+    padding: 2rem 0 3.25rem
+}
+
+@media screen and (min-width:48em) {
+    .c-range-carousel {
+        padding: 4.25rem 0 4.875rem
+    }
+}
+
+@media screen and (min-width:64em) {
+    .c-range-carousel {
+        padding: 5.3125rem 0 5.5rem
+    }
+}
+
+.c-range-carousel__heading {
+    text-align: center
+}
+
+.c-range-carousel__title {
+    font-family: sortsmillgoudy, Times New Roman, serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    letter-spacing: .1em;
+    line-height: 1.5;
+    margin: 0 0 .875rem;
+    overflow-wrap: break-word
+}
+
+@media screen and (min-width:48em) {
+    .c-range-carousel__title {
+        font-size: 2rem;
+        line-height: 1.3125;
+        margin: 0 0 .5rem
+    }
+}
+
+.c-range-carousel__subtitle {
+    font-family: ibmplexmono, Courier New, serif;
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .01em;
+    line-height: 1.66667;
+    margin: 0 0 .5rem
+}
+
+.c-range-carousel .swiper-container {
+    overflow: visible
+}
+
+.c-range-carousel .swiper-container:not(.swiper-initialized) .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.c-range-carousel .swiper-container:not(.swiper-initialized) .swiper-slide {
+    width: 70.42254%
+}
+
+@media screen and (min-width:48em) {
+    .c-range-carousel .swiper-container:not(.swiper-initialized) .swiper-slide {
+        width: 42.91845%
+    }
+}
+
+@media screen and (min-width:64em) {
+    .c-range-carousel .swiper-container:not(.swiper-initialized) .swiper-slide {
+        width: 25%
+    }
+}
+
+.c-range-carousel .swiper-container .swiper-slide,
+.c-range-carousel .swiper-container .swiper-wrapper {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch
+}
+
+.c-range-carousel .swiper-container .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch
+}
