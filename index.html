@@ -4344,6 +4344,94 @@
 
 
 
+
+
+
+
+
+
+        <section class="poster-section">
+            <div class="poster-container">
+                <img src="/en-US/images/j.png" alt="Poster 1" class="poster-image">
+                <img src="/en-US/images/Age Defying Day Serum  Anti aging (1).png" alt="Poster 2" class="poster-image">
+            </div>
+        </section>
+
+        <style>
+       /* Full-width container for posters */
+/* Centered container with full-width background */
+.poster-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f5f5f5; /* Optional: light background for contrast */
+    box-sizing: border-box;
+}
+
+/* Container for the two images */
+.poster-container {
+    display: flex;
+    gap: 20px;
+    max-width: 80%; /* Reduces overall width, making the images smaller */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styling with hover effect */
+.poster-image {
+    width: 48%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.poster-image:hover {
+    transform: scale(1.05); /* Scales up slightly on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .poster-container {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+    }
+    .poster-image {
+        width: 100%; /* Each image takes full width on mobile */
+    }
+}
+
+
+        </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <footer class="animatedParent animateOnce" aria-labelledby="footer-title">
             <h2 id="footer-title" class="visually-hidden hidden-label">
                 Footer
